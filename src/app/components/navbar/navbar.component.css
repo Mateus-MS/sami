@@ -1,0 +1,63 @@
+:host{
+
+    /* Size */
+    width: 100dvw;
+    height: 10dvh;
+
+    /* Styling */
+    background-color: var(--black);
+
+    /* Child Placement */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 4% 5%;
+
+}
+
+.logo{
+
+    /* Font */
+    color: var(--white);
+    font-family: 'bebas';
+    font-size: 3em;
+    letter-spacing: 6px;
+    text-decoration: none;
+
+    /* User */
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.holder{
+
+    /* Size */
+    height: 60%;
+
+    /* Child Placement */
+    display: flex;
+
+    /* TEMP FIX */
+    justify-content: end;
+
+}
+
+.icon{
+
+    /* Size */
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    
+    /* Styling */
+    fill: var(--white);
+
+    /* Self Placement */
+    margin-left: 20px;
+
+    /* User */
+    cursor: pointer;
+
+}

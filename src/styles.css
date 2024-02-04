@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url(./assets/fonts/bebas.otf);
+}
+
+:root{
+
+    --white: #FEFEFE;
+    --black: #171717;
+
+}
