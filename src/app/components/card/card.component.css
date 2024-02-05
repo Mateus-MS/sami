@@ -39,7 +39,7 @@
 .price{
 
     display: flex;
-    font-family: 'geosans';
+    font-family: 'price';
 
     color: var(--gray);
 

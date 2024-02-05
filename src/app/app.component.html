@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<section>
+<section id="top">
     
     <div class="nav_ghost"></div>
     <app-banner></app-banner>
@@ -20,13 +20,21 @@
     
 </section>
 
-<section>
+<section id="bot">
     
     <div class="nav_ghost"></div>
     
-    <div class="collections">
+    <div class="holder">
 
-        <div class="test"></div>
+        <div class="collections">
+
+            <app-collection collection="Winter's 2023" image_path="6"></app-collection>
+            <app-collection collection="Fall's 2022" image_path="3"></app-collection>
+            <app-collection collection="Summer's 2023" image_path="9"></app-collection>
+    
+        </div>
+
+        <button class="all_collections">SEE ALL COLLECTION</button>
 
     </div>
 

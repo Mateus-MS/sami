@@ -4,6 +4,14 @@
     padding: 0;
     border: 0;
 
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
 @font-face {
@@ -13,7 +21,12 @@
 
 @font-face {
     font-family: 'geosans';
-    src: url(./assets/fonts/geosans.otf);
+    src: url(./assets/fonts/price.otf);
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url(./assets/fonts/quicksand.otf);
 }
 
 :root{

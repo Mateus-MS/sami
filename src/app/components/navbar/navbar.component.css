@@ -19,12 +19,15 @@
     position: sticky;
     top: 0;
 
+    color: var(--white);
+    fill: var(--white);
+
 }
 
 .logo{
 
     /* Font */
-    color: var(--white);
+    color: inherit;
     font-family: 'bebas';
     font-size: 3em;
     letter-spacing: 6px;
@@ -41,9 +44,6 @@
     /* Size */
     height: 70%;
     aspect-ratio: 1 / 1;
-    
-    /* Styling */
-    fill: var(--white);
 
     /* Self Placement */
     margin-left: 20px;
