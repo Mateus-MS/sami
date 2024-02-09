@@ -1,8 +1,10 @@
 <details>
 
     <summary>{{summary}}</summary>
-    <div *ngFor="let item of itens">
-        <img [src]="item.icon_path">
+    <div class="holder" *ngFor="let item of itens">
+        <div class="image" *ngIf="item.icon_path !== undefined">
+            <img [src]="item.icon_path">
+        </div>
         <p>{{item.text}}</p>
     </div>
 

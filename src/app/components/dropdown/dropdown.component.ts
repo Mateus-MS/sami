@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 interface list{
-  icon_path: string;
+  icon_path?: string;
   text: string;
 }
 

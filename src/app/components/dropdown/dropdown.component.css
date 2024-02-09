@@ -30,18 +30,35 @@ details summary{
 
     /* User */
     cursor: pointer;
+    user-select: none;
 
 }
 
-details div{
+details > div{
 
-    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.holder{
+
     height: 2em;
+    width: 100%;
 
     display: flex;
     align-items: center;
 
-    margin-left: 1em;
+}
+
+.image{
+
+    height: 2em;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -50,7 +67,7 @@ details p{
     font-family: 'quicksand';
     color: var(--white);
 
-    margin-left: .7em;
+    margin-left: .5em;
 
 }
 
