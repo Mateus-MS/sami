@@ -1,0 +1,14 @@
+.logo{
+
+    /* Font */
+    color: var(--white);
+    font-family: 'bebas';
+    font-size: 3em;
+    letter-spacing: 6px;
+    text-decoration: none;
+
+    /* User */
+    user-select: none;
+    cursor: pointer;
+
+}

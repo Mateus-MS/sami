@@ -337,14 +337,18 @@ footer{
 
 }
 
-.t2{
+.middle{
     
-    
-
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
         
 }
 
-.t3{
-    background-color: yellow;
+.right{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
