@@ -1,31 +1,43 @@
 .nav_ghost{
 
+    /* Size */
     width: 100dvw;
     height: 10dvh;
 
 }
 
 :host{
-
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    
+    /* Size */
     height: 100dvh;
+
+    /* User */
+    scroll-snap-type: y mandatory;
+
+    /* Child Placement */
     display: block;
+
+    /* Shaping */
+    overflow-y: scroll;
 
 }
 
 section{
+    /* User */
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
 .cards{
 
+    /* Size */
     width: 100dvw;
     height: 40dvh;
 
+    /* Styling */
     background-color: var(--white);
 
+    /* Child Placement */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,9 +47,11 @@ section{
 
 #top .holder{
 
+    /* Size */
     width: 90dvw;
     height: 70%;
 
+    /* Child Placement */
     display: flex;
     justify-content: space-between;
 
@@ -45,29 +59,35 @@ section{
 
 .more{
 
-    margin-left: auto;
-    margin-right: 5dvw;
-
+    /* Size */
     width: 40dvw;
     height: 6dvh;
 
+    /* Self Placement */
+    margin-left: auto;
+    margin-right: 5dvw;
+
+    /* Styling */
     background-color: var(--black);
-
     box-sizing: border-box;
+    border-radius: 10px;
 
+    /* Font */
     color: var(--white);
     font-size: 1.5em;
     font-family: 'bebas';
 
-    border-radius: 10px;
-
+    /* Animation */
     transition: background-color .4s, color .4s;
 
 }
 
 .more:hover{
 
+    /* Font */
     color: var(--black);
+
+    /* Styling */
     background-color: var(--white);
     border: 2px solid var(--black);
 
@@ -75,9 +95,11 @@ section{
 
 #bot .holder{
 
+    /* Size */
     width: 100dvw;
-    height: 65dvh;
+    height: 55dvh;
 
+    /* Child Placement */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -87,60 +109,237 @@ section{
 
 .collections{
 
+    /* Size */
     width: 100dvw;
-    height: 70%;
+    height: 80%;
 
+    /* Styling */
     background-color: var(--white);
+    overflow-x: scroll;
 
+    /* Child Placement */
     display: flex;
     align-items: center;
 
+    /* Self Placement */
     margin-left: auto;
 
-    overflow-x: scroll;
 
 }
 
 .collections > app-collection:nth-child(1){
+    /* self Placement */
     margin-left: 2.5dvh;
 }
 
 .all_collections{
 
+    /* Size */
     width: fit-content;
     height: fit-content;
 
     box-sizing: border-box;
 
-    font-size: 1.3em;
+    /* Font */
+    font-size: 1em;
     font-family: 'quicksand';
     color: var(--black);
     
+    /* Styling */
     padding: 10px 20px;
     border-radius: 10px;
     background-color: var(--white);
     border: 1px solid var(--black);
 
+    /* Self Placement */
     margin-right: 5dvw;
 
+    /* Animation */
     transition: color .5s, background-color .5s;
 
 }
 
 .all_collections:hover{
 
+    /* Font */
     color: var(--white);
+    
+    /* Styling */
     background-color: var(--black);
-
     border: 1px solid var(--white);
 
 }
 
 footer{
 
+    /* Size */
     width: 100dvw;
     height: 35dvh;
 
+    /* Styling */
     background-color: var(--black);
 
+    /* Child Placement */
+    display: grid;
+    grid-template-columns: 35% 45% 20%;
+
+}
+
+.left{
+    
+    /* Child Placement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.newsletter{
+
+    /* Size */
+    width: 80%;
+
+}
+
+.newsletter > p {
+
+    /* Font */
+    font-family: 'bebas';
+    font-size: 1.4em;
+    color: var(--white);
+
+    /* User */
+    user-select: none;
+
+}
+
+.newsletter > input {
+
+    /* Variables */
+    --square-size: 6px;
+    --square-space: 4px;
+
+    /* Size */
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Font */
+    font-size: .8em;
+    font-family: 'quicksand';
+    color: var(--white);
+    
+    /* Stlying */
+    background-color: var(--black);
+    padding: 8px 0;
+    padding-left: calc(var(--square-size) + var(--square-space));
+    border-bottom: 1px solid var(--white);
+
+    /* Image */
+    background-image: url(../assets/placeholder_images/rectangle.png);
+    background-size: var(--square-size);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: center;
+
+    /* Self Placement */
+    margin-bottom: 10px;
+
+}
+
+.newsletter > input:focus{
+
+    /* User */
+    outline: none;
+
+}
+
+.newsletter > button{
+
+    /* Font */
+    font-family: 'bebas';
+    font-size: 1.2em;
+    color: var(--black);
+
+    /* Styling */
+    background-color: var(--white);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: 1px solid var(--black);
+    
+    /* Self Placement */
+    padding: 3px 8px;
+
+    /* User */
+    cursor: pointer;
+    
+    /* Animation */
+    transition: all ease .3s;
+    
+}
+
+.newsletter > button:hover{
+    
+    /* Styling */
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    color: var(--white);
+
+}
+
+.map{
+
+    /* Size */
+    width: 80%;
+    aspect-ratio: 1 / 1;
+
+    /* Image */
+    background-image: url(../assets/placeholder_images/maps.png);
+    background-size: cover;
+
+
+}
+
+.address{
+
+    /* Size */
+    width: 80%;
+
+    /* Child Placement */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.address > p{
+
+    /* Size */
+    width: 80%;
+
+    /* Font */
+    font-family: 'quicksand';
+    font-size: 1em;
+    color: var(--white);
+
+    /* Styling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+.address > img{
+
+    /* User */
+    cursor: pointer;
+
+}
+
+.t2{
+    background-color: green;
+}
+.t3{
+    background-color: yellow;
 }
