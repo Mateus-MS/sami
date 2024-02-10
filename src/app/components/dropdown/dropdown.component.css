@@ -1,7 +1,27 @@
-details{
+/* details{
 
     width: 100%;
     
+} */
+
+details{
+    width: 100%;
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 400ms ease;
+    
+}
+
+details[open] + .content{
+    max-height: 1000px;
+    transition: max-height 400ms ease;
 }
 
 details summary{
@@ -34,7 +54,7 @@ details summary{
 
 }
 
-details > div{
+.content > div{
 
     display: flex;
     align-items: center;
@@ -62,7 +82,7 @@ details > div{
 
 }
 
-details p{
+.content p{
     /* Text */
     font-family: 'quicksand';
     color: var(--white);
@@ -71,7 +91,7 @@ details p{
 
 }
 
-details img{
+.content img{
 
     height: 50%;
     aspect-ratio: 1 / 1;

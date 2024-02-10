@@ -337,14 +337,6 @@ footer{
 
 }
 
-.middle{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-        
-}
-
 .right{
 
     display: flex;

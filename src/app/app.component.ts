@@ -5,11 +5,12 @@ import { CardComponent } from './components/card/card.component';
 import { CollectionComponent } from './components/collection/collection.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { LogoComponent } from './components/logo/logo.component';
+import { MiddleComponent } from './components/middle/middle.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, BannerComponent, CardComponent, CollectionComponent, DropdownComponent, LogoComponent],
+  imports: [NavbarComponent, BannerComponent, CardComponent, CollectionComponent, DropdownComponent, LogoComponent, MiddleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

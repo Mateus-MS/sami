@@ -1,6 +1,12 @@
 <details>
 
-    <summary>{{summary}}</summary>
+    <summary>
+        <span>{{summary}}</span>
+    </summary>
+
+</details>
+<div class="content">
+
     <div class="holder" *ngFor="let item of itens">
         <div class="image" *ngIf="item.icon_path !== undefined">
             <img [src]="item.icon_path">
@@ -8,4 +14,4 @@
         <p>{{item.text}}</p>
     </div>
 
-</details>
+</div>
