@@ -1,7 +1,7 @@
 .logo{
 
     /* Font */
-    color: var(--white);
+    color: inherit;
     font-family: 'bebas';
     font-size: 3em;
     letter-spacing: 6px;

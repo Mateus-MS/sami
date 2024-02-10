@@ -1,11 +1,14 @@
 :host{
 
+    --background-color: var(--black);
+    --items-color: var(--white);
+
     /* Size */
     width: 100dvw;
     height: 10dvh;
 
     /* Styling */
-    background-color: var(--black);
+    background-color: var(--background-color);
 
     /* Child Placement */
     display: flex;
@@ -19,8 +22,10 @@
     position: sticky;
     top: 0;
 
-    color: var(--white);
-    fill: var(--white);
+    color: var(--items-color);
+    fill: var(--items-color);
+
+    transition: all ease-in-out .2s;
 
 }
 
