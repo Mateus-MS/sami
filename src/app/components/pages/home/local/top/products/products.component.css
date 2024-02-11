@@ -1,0 +1,64 @@
+:host{
+
+    /* Size */
+    width: 100dvw;
+    height: 40dvh;
+
+    /* Styling */
+    background-color: var(--white);
+
+    /* Child Placement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.holder{
+
+     /* Size */
+     width: 90dvw;
+     height: 70%;
+ 
+     /* Child Placement */
+     display: flex;
+     justify-content: space-between;
+
+}
+
+button{
+
+     /* Size */
+     width: 40dvw;
+     height: 6dvh;
+ 
+     /* Self Placement */
+     margin-left: auto;
+     margin-right: 5dvw;
+ 
+     /* Styling */
+     background-color: var(--black);
+     box-sizing: border-box;
+     border-radius: 10px;
+ 
+     /* Font */
+     color: var(--white);
+     font-size: 1.5em;
+     font-family: 'bebas';
+ 
+     /* Animation */
+     transition: background-color .4s, color .4s;
+ 
+ }
+
+button:hover{
+
+     /* Font */
+     color: var(--black);
+ 
+     /* Styling */
+     background-color: var(--white);
+     border: 2px solid var(--black);
+ 
+ }

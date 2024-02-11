@@ -1,0 +1,29 @@
+:host{
+    
+    /* Size */
+    height: 100dvh;
+
+    /* User */
+    scroll-snap-type: y mandatory;
+
+    /* Child Placement */
+    display: block;
+
+    /* Shaping */
+    overflow-y: scroll;
+
+}
+
+section{
+    /* User */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.right{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

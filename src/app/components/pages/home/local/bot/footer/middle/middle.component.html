@@ -1,20 +1,27 @@
-<app-dropdown (click)="close(0)" id="0" style="margin-top: 11px;" summary="Contact" [itens]="
+<app-dropdown (click)="close(0)" style="margin-top: 11px;" summary="Contact" [itens]="
     [
         {icon_path: '/assets/icons/phone.png', text: '+351 999 999 999'},
         {icon_path: '/assets/icons/email.png', text: 'sami@gmail.com'}
     ]
 "></app-dropdown>
 
-<app-dropdown (click)="close(1)" id="1" summary="Information" [itens]="
+<app-dropdown (click)="close(1)" summary="Information" [itens]="
     [
         {text: 'nobody click there'},
         {text: 'what do you want?'}
     ]
 "></app-dropdown>
 
-<app-dropdown (click)="close(2)" id="2" summary="Other services" [itens]="
+<app-dropdown (click)="close(2)" summary="Other services" [itens]="
     [
         {text: 'what you wants more'},
         {text: 'than the better clothes'}
+    ]
+"></app-dropdown>
+
+<app-dropdown (click)="close(3)" summary="FAQ" [itens]="
+    [
+        {text: 'pls dont have any quest'},
+        {text: 'i have anxiety'}
     ]
 "></app-dropdown>

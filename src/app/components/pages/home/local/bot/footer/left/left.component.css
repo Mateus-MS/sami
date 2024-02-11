@@ -1,0 +1,151 @@
+:host{
+
+    /* Child Placement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.newsletter{
+
+    /* Size */
+    width: 80%;
+
+}
+
+.newsletter > p {
+
+    /* Font */
+    font-family: 'bebas';
+    font-size: 1.4em;
+    color: var(--white);
+
+    /* User */
+    user-select: none;
+
+}
+
+input {
+
+    /* Variables */
+    --square-size: 6px;
+    --square-space: 4px;
+
+    /* Size */
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Font */
+    font-size: .8em;
+    font-family: 'quicksand';
+    color: var(--white);
+    
+    /* Stlying */
+    background-color: var(--black);
+    padding: 8px 0;
+    padding-left: calc(var(--square-size) + var(--square-space));
+    border-bottom: 1px solid var(--white);
+
+    /* Image */
+    background-image: url(/assets/placeholder_images/rectangle.png);
+    background-size: var(--square-size);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: center;
+
+    /* Self Placement */
+    margin-bottom: 10px;
+
+}
+
+input:focus{
+
+    /* User */
+    outline: none;
+
+}
+
+button{
+
+    /* Font */
+    font-family: 'bebas';
+    font-size: 1.2em;
+    color: var(--black);
+
+    /* Styling */
+    background-color: var(--white);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: 1px solid var(--black);
+    
+    /* Self Placement */
+    padding: 3px 8px;
+
+    /* User */
+    cursor: pointer;
+    
+    /* Animation */
+    transition: all ease .3s;
+    
+}
+
+button:hover{
+    
+    /* Styling */
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    color: var(--white);
+
+}
+
+.map{
+
+    /* Size */
+    width: 80%;
+    aspect-ratio: 1 / 1;
+
+    /* Image */
+    background-image: url(/assets/placeholder_images/maps.png);
+    background-size: cover;
+
+
+}
+
+.address{
+
+    /* Size */
+    width: 80%;
+
+    /* Child Placement */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.address > p{
+
+    /* Size */
+    width: 80%;
+
+    /* Font */
+    font-family: 'quicksand';
+    font-size: 1em;
+    color: var(--white);
+
+    /* Styling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+.address > img{
+
+    /* User */
+    cursor: pointer;
+
+}

@@ -1,0 +1,21 @@
+<details>
+
+    <summary>
+        <span>{{summary}}</span>
+    </summary>
+
+</details>
+<div class="content">
+
+    @for(item of itens; track item.text ){
+        <div class="holder">
+            @if (item.icon_path !== undefined) {
+                <div class="image">
+                    <img [src]="item.icon_path">
+                </div>
+            }
+            <p>{{item.text}}</p>
+        </div>
+    }
+
+</div>

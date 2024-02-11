@@ -1,15 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { CardCollectionComponent } from './card-collection/card-collection.component';
 
 @Component({
   selector: 'app-collection',
   standalone: true,
-  imports: [],
+  imports: [CardCollectionComponent],
   templateUrl: './collection.component.html',
   styleUrl: './collection.component.css'
 })
 export class CollectionComponent {
-
-  @Input() collection!:string;
-  @Input() image_path!:string;
 
 }

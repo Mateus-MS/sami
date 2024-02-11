@@ -42,7 +42,7 @@ details summary{
     padding-left: calc(var(--square-size) + var(--square-space));
 
     /* White square */
-    background-image: url(../../../assets/placeholder_images/rectangle.png);
+    background-image: url(/assets/placeholder_images/rectangle.png);
     background-size: var(--square-size);
     background-repeat: no-repeat;
     background-position-x: 0px;
@@ -52,13 +52,6 @@ details summary{
     cursor: pointer;
     user-select: none;
 
-}
-
-.content > div{
-
-    display: flex;
-    align-items: center;
-    
 }
 
 .holder{

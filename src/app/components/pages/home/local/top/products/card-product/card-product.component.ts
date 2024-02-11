@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-card-product',
   standalone: true,
   imports: [],
-  templateUrl: './card.component.html',
-  styleUrl: './card.component.css'
+  templateUrl: './card-product.component.html',
+  styleUrl: './card-product.component.css'
 })
-export class CardComponent {
+export class CardProductComponent {
 
   @Input() name!: string;
   @Input() price!: string;

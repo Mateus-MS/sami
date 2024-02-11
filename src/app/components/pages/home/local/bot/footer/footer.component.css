@@ -1,0 +1,14 @@
+footer{
+
+    /* Size */
+    width: 100dvw;
+    height: 35dvh;
+
+    /* Styling */
+    background-color: var(--black);
+
+    /* Child Placement */
+    display: grid;
+    grid-template-columns: 35% 45% 20%;
+
+}

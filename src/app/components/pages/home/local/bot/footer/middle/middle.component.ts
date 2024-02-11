@@ -1,5 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
-import { DropdownComponent } from '../dropdown/dropdown.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @Component({
   selector: 'app-middle',
